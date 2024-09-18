@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Rillary, Maria Eduarda, Maria Isabel, Maria Luís">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>CPTM Web Comments</title>
+</head>
+
+<body>
+    <!--Cabeçalho da página-->
+    <header>
+        <nav class="navbar">
+            <a href="https://www.cptm.sp.gov.br/Pages/Home.aspx" target="_blank">
+                <img class="Logo img-fluid" src="img/CPTM_(Logo).svg.png" alt="CPTM Logo">
+            </a>
+            <ul>
+                <li><a href="https://www.cptm.sp.gov.br/a-companhia/Pages/a-companhia.aspx" target="_blank">Quem
+                        Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Parte principal da página-->
+    <main>
+        <section id="Avaliaçõe">
+            <h1>Avaliações dos Clientes</h1>
+
+            <!--Início de carrossel nos comentários-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3 class="nome-user">Maria</h3>
+                        <p class="comentario-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                            ullam cupiditate eum perspiciatis beatae temporibus nam possimus nihil minus, cum aut, ex ab
+                            animi mollitia unde ut nobis sunt? Dolores!</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="nome-user">Rillary</h3>
+                        <p class="comentario-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                            ullam cupiditate eum perspiciatis beatae temporibus nam possimus nihil minus, cum aut, ex ab
+                            animi mollitia unde ut nobis sunt? Dolores!</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="nome-user">Maria Luísa</h3>
+                        <p class="comentario-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                            ullam cupiditate eum perspiciatis beatae temporibus nam possimus nihil minus, cum aut, ex ab
+                            animi mollitia unde ut nobis sunt? Dolores!</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="nome-user">Maria Isabel</h3>
+                        <p class="comentario-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                            ullam cupiditate eum perspiciatis beatae temporibus nam possimus nihil minus, cum aut, ex ab
+                            animi mollitia unde ut nobis sunt? Dolores!</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="nome-user">Leticia</h3>
+                        <p class="comentario-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                            ullam cupiditate eum perspiciatis beatae temporibus nam possimus nihil minus, cum aut, ex ab
+                            animi mollitia unde ut nobis sunt? Dolores!</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Fim do carrossel de comentários-->
+        </section>
+
+        <section id="formulario">
+            <div class="container">
+                <form>
+                    <fieldset>
+                        <!--Inicio das repostas escritas-->
+                        <legend>Que tal deixar uma avaliação?</legend>
+                        <div class="resposta-escritas">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="idade">Idade</label>
+                            <select name="idade" id="idade" required>
+                                <option value="">Selecione</option>
+                                <option value="menorIdade">Menos de 18</option>
+                                <option value="18-a-35">Entre 18 e 35</option>
+                                <option value="35-a-50">Entre 35 e 50</option>
+                                <option value="50+">Mais de 50</option>
+                            </select>
+
+                            <label for="genero">Gênero</label>
+                            <select name="genero" id="genero" required>
+                                <option value="">Selecione</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="nao-binario">Não binário</option>
+                                <option value="outro">Outro</option>
+                                <option value="nao-dizer">Prefiro não dizer</option>
+                            </select>
+                        </div>
+                        <!--Fim das respostas escritas-->
+
+                        <!--Inicio das respostas por radio button-->
+                        <div class="resposta-botoes">
+                            <div class="form-item">
+                                <legend>Como você avalia o desempenho dos trens</legend>
+                                <label for="muito bom">
+                                    <input type="radio" name="desempenho-trens" value="muito bom">
+                                    Muito bom
+                                </label>
+                                <label for="bom">
+                                    <input type="radio" name="desempenho-trens" value="bom">
+                                    Bom
+                                </label>
+                                <label for="regular">
+                                    <input type="radio" name="desempenho-trens" value="regular">
+                                    Regular
+                                </label>
+                                <label for="ruim">
+                                    <input type="radio" name="desempenho-trens" value="ruim">
+                                    Ruim
+                                </label>
+                            </div>
+
+                            <div class="form-item">
+                                <legend>Como você avalia a limpeza dos trens/estações</legend>
+                                <label for="muito bom">
+                                    <input type="radio" name="limpeza-trens" value="muito bom">
+                                    Muito bom
+                                </label>
+                                <label for="bom">
+                                    <input type="radio" name="limpeza-trens" value="bom">
+                                    Bom
+                                </label>
+                                <label for="regular">
+                                    <input type="radio" name="limpeza-trens" value="regular">
+                                    Regular
+                                </label>
+                                <label for="ruim">
+                                    <input type="radio" name="limpeza-trens" value="ruim">
+                                    Ruim
+                                </label>
+                            </div>
+
+                            <div class="form-item">
+                                <legend>Como você avalia a segurança dos trens</legend>
+                                <label for="muito bom">
+                                    <input type="radio" name="Segurança-trens" value="muito bom">
+                                    Muito bom
+                                </label>
+                                <label for="bom">
+                                    <input type="radio" name="Segurança-trens" value="bom">
+                                    Bom
+                                </label>
+                                <label for="regular">
+                                    <input type="radio" name="Segurança-trens" value="regular">
+                                    Regular
+                                </label>
+                                <label for="ruim">
+                                    <input type="radio" name="Segurança-trens" value="ruim">
+                                    Ruim
+                                </label>
+                            </div>
+                        </div>
+                        <!--Fim das respostas por radio button-->
+
+                        <!--Caixa de Comentários-->
+                        <div class="container">
+                            <div class="caixa-comentario">
+                                <label for="comentario1">
+                                    Comentário 1
+                                    <textarea name="comentario1" id="comentario1" cols="25" rows="10"></textarea>
+                                </label>
+                            </div>
+                            <div class="caixa-comentario">
+                                <label for="comentario2">
+                                    Comentário 2
+                                    <textarea name="comentario2" id="comentario2" cols="25" rows="10"></textarea>
+                                </label>
+                            </div>
+                            <div class="caixa-comentario">
+                                <label for="comentario3">
+                                    Comentário 3
+                                    <textarea name="comentario3" id="comentario3" cols="25" rows="10"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                        
+                    
+                        <!--Fim das caixas de comentários-->
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
