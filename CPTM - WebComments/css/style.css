@@ -131,18 +131,21 @@ h1 {
 .respostas-escritas input,
 .respostas-escritas select {
     background-color: #D3D3D3; /* Fundo cinza claro */
-    border: 1px solid #ccc; /* Borda leve */
+    border: 2px solid #ccc; /* Borda leve */
     border-radius: 5px; /* Arredondamento dos cantos */
-    padding: 9px; /* Espaçamento interno */
-    width: 90%; /* Largura ajustada */
+    padding: 7px; /* Espaçamento interno */
+    width: 100%; /* Agora ambos os campos ocupam 100% da largura disponível */
     margin-bottom: 10px; /* Espaçamento entre campos */
+    box-sizing: border-box; /* Garante que o padding e a borda estejam dentro da largura */
 }
 
-/* Estilos específicos para campos de texto e select */
-.respostas-escritas input[type="text"],
-.respostas-escritas select {
-    max-width: 300px; /* Largura máxima para caixas pequenas */
+/* Estilos específicos para campos de texto e select dentro de containers flex */
+.nome-idade div input[type="text"],
+.nome-idade div select {
+    max-width: none; /* Remove a limitação da largura */
+    flex: 1; /* Faz os campos ocuparem o espaço disponível igualmente */
 }
+
 
             /* ---- Transparência ---- */
 #custom-color{
